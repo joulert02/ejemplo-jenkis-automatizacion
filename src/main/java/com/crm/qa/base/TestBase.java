@@ -41,12 +41,12 @@ public class TestBase {
 		String browserName = prop.getProperty("browser");
 		
 		if(browserName.equals("chrome")){
-			System.setProperty("webdriver.chrome.driver", "/Users/MSI-PC/Downloads/chromedriver");	
+			System.setProperty("webdriver.chrome.driver", "/Users/MSI-PC/Downloads/chromedriver.exe");	
 			driver = new ChromeDriver(); 
 		}
 		else if(browserName.equals("FF")){
-			System.setProperty("webdriver.gecko.driver", "/Users/MSI-PC/Downloads/chromedriver");	
-			driver = new FirefoxDriver(); 
+			System.setProperty("webdriver.chrome.driver", "/Users/MSI-PC/Downloads/chromedriver.exe");	
+			driver = new ChromeDriver(); 
 		}
 		
 		
